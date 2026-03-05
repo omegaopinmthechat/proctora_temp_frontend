@@ -24,7 +24,7 @@ export default function Home() {
             style={{ letterSpacing: "-0.02em" }}
           >
             Welcome to{" "}
-            <span style={{ color: "#9333ea" }}>Proctora</span>
+            <span style={{ color: "#9333ea" }}>Proctora.in</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-500">
             Quiz App.
