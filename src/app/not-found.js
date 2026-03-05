@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 export const metadata = {
-  title: "Proctora",
-  description: "Your all-in-one platform — launching soon.",
+  title: "404 — Proctora",
+  description: "Page not found.",
 };
 
-export default function Home() {
+export default function NotFound() {
   return (
     <div className="relative min-h-screen bg-white font-sans">
       {/* Animated purple blobs */}
@@ -19,18 +21,28 @@ export default function Home() {
       <div className="relative z-10 flex min-h-screen flex-col">
         {/* Hero */}
         <main className="flex flex-1 flex-col items-center justify-center px-4 pt-32 pb-20 text-center">
+          <p
+            className="text-8xl font-bold"
+            style={{ color: "#9333ea", letterSpacing: "-0.02em" }}
+          >
+            404
+          </p>
           <h1
-            className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl"
+            className="mt-4 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl"
             style={{ letterSpacing: "-0.02em" }}
           >
-            Welcome to{" "}
-            <span style={{ color: "#9333ea" }}>Proctora</span>
+            Page Not Found
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-500">
-            Quiz App.
-          </p>
-          <p className="mt-8 text-2xl font-bold tracking-widest text-zinc-900 uppercase">
-            Launching Soon!!!
+            This page doesn&apos;t exist. Head back to{" "}
+            <Link
+              href="/"
+              className="font-medium transition-colors hover:text-zinc-900"
+              style={{ color: "#9333ea" }}
+            >
+              Proctora
+            </Link>
+            .
           </p>
         </main>
 
@@ -43,7 +55,6 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 transition-colors hover:text-zinc-900"
             >
-              {/* GitHub icon */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -62,7 +73,6 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 transition-colors hover:text-zinc-900"
             >
-              {/* LinkedIn icon */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
